@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import {
 	Banner,
 	BookCar,
@@ -25,9 +24,5 @@ const Home = () => {
 			<Download />
 		</>
 	);
-=======
-const Home = () => {
-	return <div>Home</div>;
->>>>>>> 621274a9a4abb850bbfe26c54fc81864e778f5d5
 };
 export default Home;

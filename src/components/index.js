@@ -1,6 +1,5 @@
 import Footer from './common/Footer';
 import Navbar from './common/Navbar';
-<<<<<<< HEAD
 //Home page Components
 import Banner from './home/Banner';
 import BookCar from './home/BookCar';
@@ -25,7 +24,3 @@ export {
 	PlanTrip,
 	Testimonials,
 };
-=======
-
-export { Footer, Navbar };
->>>>>>> 621274a9a4abb850bbfe26c54fc81864e778f5d5
