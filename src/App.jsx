@@ -1,6 +1,14 @@
+import { BrowserRouter as Router } from 'react-router-dom';
+import AppRoutes from './routes';
 import './styles/styles.scss';
 
 const App = () => {
-	return <div className="container">App</div>;
+	return (
+		<>
+			<Router>
+				<AppRoutes />
+			</Router>
+		</>
+	);
 };
 export default App;
