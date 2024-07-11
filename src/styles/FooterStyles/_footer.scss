@@ -1,7 +1,7 @@
 @use '../global' as *;
 
 footer {
-	background-color: $bg-white;
+	background-color: $white;
 	padding: 10rem 0;
 }
 
@@ -52,7 +52,7 @@ footer {
 
 			&:nth-child(2) {
 				font-size: $p-size;
-				color: $text-gray;
+				color: $gray;
 				line-height: 1.7;
 				margin-bottom: 3rem;
 			}

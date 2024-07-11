@@ -3,7 +3,7 @@
 .book-section {
 	position: relative;
 
-	background: linear-gradient(to bottom, $bg-gray 20%, $bg-white 80%);
+	background: linear-gradient(to bottom, $bg-gray 20%, $white 80%);
 }
 
 .book-content {
@@ -11,7 +11,7 @@
 	margin-bottom: 10rem;
 
 	&__box {
-		background-color: $bg-white;
+		background-color: $white;
 		width: 100%;
 		padding: 4rem 4.5rem 5rem 5.5rem;
 		box-shadow: 0 10px 20px 0 rgb(0 0 0 / 10%);
@@ -74,9 +74,9 @@
 
 				select {
 					font-size: 1.5rem;
-					color: $text-gray;
+					color: $gray;
 					font-family: $text-font;
-					border: 1px solid $text-gray;
+					border: 1px solid $gray;
 					border-radius: 3px;
 					font-weight: 400;
 					padding: 1.2rem 1.3rem;
@@ -85,8 +85,7 @@
 
 				.error {
 					color: $danger;
-					font-size: $p-size;
-					margin-top: 1rem;
+					margin-top: 0.5rem;
 				}
 			}
 
@@ -97,9 +96,9 @@
 
 				input {
 					outline: none;
-					color: $text-gray;
+					color: $gray;
 					padding-right: 3rem;
-					border: 1px solid $text-gray;
+					border: 1px solid $gray;
 				}
 
 				label {
@@ -125,6 +124,7 @@
 
 				.error {
 					color: $danger;
+					margin-top: 0.5rem;
 				}
 			}
 		}
@@ -199,16 +199,20 @@
 }
 
 .modal-overlay {
-	opacity: 0;
+	opacity: 1;
 	display: none;
 
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba($black, 0.3);
 	z-index: 999999999;
 	top: 0;
 	right: 0;
+}
+
+.active-modal .modal-overlay {
+	display: block !important;
 }
 
 .booking-modal {
@@ -225,8 +229,8 @@
 	transform: translate(-50%, -50%);
 	width: 83rem;
 	height: 100vh;
-	border: 2px solid white;
-	background-color: rgba(255, 255, 255);
+	border: 2px solid $white;
+	background-color: $white;
 	padding-right: 2px;
 	color: $text-black;
 
@@ -243,7 +247,7 @@
 		justify-content: space-between;
 		padding: 1rem 1.5rem;
 		background-color: $primary;
-		color: white;
+		color: $white;
 		align-items: center;
 
 		h2 {
@@ -253,7 +257,7 @@
 
 		i {
 			font-size: 2.5rem;
-			color: rgba(255, 255, 255, 0.919);
+			color: #ffffffea;
 			cursor: pointer;
 			transition: all 0.2;
 
@@ -289,11 +293,11 @@
 	}
 
 	&__car-info {
-		background-color: white;
+		background-color: $white;
 		padding: 3rem 3rem;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		border-bottom: 1px solid #7777779f;
+		border-bottom: 1px solid rgba($gray, 0.2);
 
 		@media (max-width: 650px) {
 			grid-template-columns: 1fr;
@@ -371,7 +375,7 @@
 
 	&__person-info {
 		padding: 3rem 3rem;
-		background-color: white;
+		background-color: $white;
 		display: flex;
 		flex-direction: column;
 
@@ -488,4 +492,5 @@
 
 .error {
 	color: $danger;
+	margin-top: 0.5rem;
 }

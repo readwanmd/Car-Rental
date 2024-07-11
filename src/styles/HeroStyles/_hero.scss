@@ -65,7 +65,7 @@
 			font-size: $p-size;
 			font-family: $text-font;
 			line-height: 1.6;
-			color: $text-gray;
+			color: $gray;
 			margin-bottom: 4rem;
 		}
 
@@ -83,6 +83,8 @@
 				text-decoration: none;
 				color: white;
 				font-weight: 700;
+				display: flex;
+				align-items: center;
 			}
 
 			&__book-ride {
