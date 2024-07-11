@@ -61,6 +61,8 @@
 				flex-direction: column;
 
 				label {
+					display: flex;
+					align-items: center;
 					font-size: $p-size;
 					font-weight: 600;
 					margin-bottom: 1.2rem;
@@ -72,13 +74,19 @@
 
 				select {
 					font-size: 1.5rem;
-					color: #ababab;
+					color: $text-gray;
 					font-family: $text-font;
-					border: 1px solid #ccd7e6;
+					border: 1px solid $text-gray;
 					border-radius: 3px;
 					font-weight: 400;
 					padding: 1.2rem 1.3rem;
 					outline: none;
+				}
+
+				.error {
+					color: $danger;
+					font-size: $p-size;
+					margin-top: 1rem;
 				}
 			}
 
@@ -89,12 +97,14 @@
 
 				input {
 					outline: none;
-					color: #878585;
+					color: $text-gray;
 					padding-right: 3rem;
-					border: 1px solid #ccd7e6;
+					border: 1px solid $text-gray;
 				}
 
 				label {
+					display: flex;
+					align-items: center;
 					font-size: 1.6rem;
 					font-weight: 600;
 					margin-bottom: 1.2rem;
@@ -112,6 +122,10 @@
 					cursor: pointer;
 					font-size: 1.6rem;
 				}
+
+				.error {
+					color: $danger;
+				}
 			}
 		}
 
@@ -125,12 +139,12 @@
 			font-weight: 500;
 			color: white;
 			background-color: $primary;
-			box-shadow: 0 10px 15px rgb(255 83 48 / 35%);
+			box-shadow: 0 10px 15px rgba($primary, 0.35);
 			cursor: pointer;
 			transition: all 0.3s;
 
 			&:hover {
-				box-shadow: 0 10px 15px rgb(255 83 48 / 55%);
+				box-shadow: 0 10px 15px rgba($primary, 0.55);
 			}
 		}
 	}
@@ -168,8 +182,7 @@
 	border-radius: 0.8rem;
 	font-size: $p-size;
 	font-weight: 500;
-
-	display: none;
+	display: flex;
 	justify-content: space-between;
 	align-items: center;
 
@@ -323,6 +336,8 @@
 				}
 
 				p {
+					display: flex;
+					align-items: center;
 					font-size: $p-size;
 					color: #777777;
 				}
@@ -410,7 +425,8 @@
 			grid-template-columns: 1fr;
 		}
 
-		span {
+		span > div,
+		div {
 			display: flex;
 			flex-direction: column;
 			gap: 0.4rem;
@@ -468,4 +484,8 @@
 	display: flex;
 	flex-direction: column;
 	gap: 3.2rem;
+}
+
+.error {
+	color: $danger;
 }
