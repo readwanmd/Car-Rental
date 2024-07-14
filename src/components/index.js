@@ -7,7 +7,7 @@ import ChooseUs from './home/ChooseUs';
 import Download from './home/Download';
 import Faq from './home/Faq';
 import Hero from './home/Hero';
-import PickCar from './home/PickCar';
+import PickCar from './home/PickCar/index.jsx';
 import PlanTrip from './home/PlanTrip';
 import Testimonials from './home/Testimonials';
 
