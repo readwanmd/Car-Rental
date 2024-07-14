@@ -6,7 +6,7 @@ import {
 } from '@tabler/icons-react';
 import { useForm } from 'react-hook-form';
 import Field from '../../common/Field‎';
-import { personalInfoInputElements } from './inputFields';
+import { carInfoElements, personalInfoInputElements } from './inputFields';
 
 const BookingModal = ({
 	modal,
@@ -51,45 +51,32 @@ const BookingModal = ({
 					<div className="dates-div">
 						<div className="booking-modal__car-info__dates">
 							<h5>Location & Date</h5>
-							<span>
-								<IconMapPinFilled />
-								<div>
-									<h6>Pick-Up Date & Time</h6>
-									<p>
-										{search?.pickupTime} /{' '}
-										<Field error={errors.pickupTime}>
-											<input
-												{...register('pickupTime', {
-													required: 'Pickup time is required',
-												})}
-												type="time"
-												className="input-time"
-											></input>
-										</Field>
-									</p>
-								</div>
-							</span>
-						</div>
 
-						<div className="booking-modal__car-info__dates">
-							<span>
-								<IconMapPinFilled />
-								<div>
-									<h6>Drop-Off Date & Time</h6>
-									<p>
-										{search?.dropoffTime} /{' '}
-										<Field error={errors.dropoffTime}>
-											<input
-												{...register('dropoffTime', {
-													required: 'Dropoff time is required',
-												})}
-												type="time"
-												className="input-time"
-											></input>
-										</Field>
-									</p>
+							{carInfoElements.map((carElement) => (
+								<div
+									key={carElement.name}
+									className="booking-modal__car-info__dates"
+								>
+									<span>
+										<IconMapPinFilled />
+										<div>
+											<h6>{carElement.title}</h6>
+											<p>
+												{search?.dropoffDate} /{' '}
+												<Field error={errors[carElement.name]}>
+													<input
+														{...register(carElement.name, {
+															required: `${carElement.errorMessage}`,
+														})}
+														type={carElement.type}
+														className="input-time"
+													></input>
+												</Field>
+											</p>
+										</div>
+									</span>
 								</div>
-							</span>
+							))}
 						</div>
 
 						<div className="booking-modal__car-info__dates">

@@ -40,3 +40,18 @@ export const personalInfoInputElements = [
 		label: 'Zip Code',
 	},
 ];
+
+export const carInfoElements = [
+	{
+		title: 'Pick-Up Date & Time',
+		name: 'pickupDate',
+		type: 'time',
+		errorMessage: 'Pickup time is required',
+	},
+	{
+		title: 'Drop-Off Date & Time',
+		name: 'dropoffTime',
+		type: 'time',
+		errorMessage: 'Dropoff time is required',
+	},
+];

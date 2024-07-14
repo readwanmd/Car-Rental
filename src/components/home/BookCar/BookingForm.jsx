@@ -103,8 +103,8 @@ const BookingForm = ({ handleSearchSubmit }) => {
 				error={errors.pickupTime}
 			>
 				<input
-					{...register('pickupTime', { required: 'Pick-up date is required' })}
-					id="picktime"
+					{...register('pickupDate', { required: 'Pick-up date is required' })}
+					id="pickdate"
 					type="date"
 				/>
 			</Field>
@@ -116,10 +116,10 @@ const BookingForm = ({ handleSearchSubmit }) => {
 				error={errors.dropoffTime}
 			>
 				<input
-					{...register('dropoffTime', {
+					{...register('dropoffDate', {
 						required: 'Drop-off date is required',
 					})}
-					id="droptime"
+					id="dropdate"
 					type="date"
 				/>
 			</Field>
