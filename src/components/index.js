@@ -3,7 +3,7 @@ import Navbar from './common/Navbar';
 //Home page Components
 import Banner from './home/Banner';
 import BookCar from './home/BookCar';
-import ChooseUs from './home/ChooseUs';
+import ChooseUs from './home/ChooseUs/index.jsx';
 import Download from './home/Download';
 import Faq from './home/Faq';
 import Hero from './home/Hero';
