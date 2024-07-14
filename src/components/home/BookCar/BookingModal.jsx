@@ -6,6 +6,7 @@ import {
 } from '@tabler/icons-react';
 import { useForm } from 'react-hook-form';
 import Field from '../../common/Field‎';
+import { personalInfoInputElements } from './inputFields';
 
 const BookingModal = ({
 	modal,
@@ -118,102 +119,28 @@ const BookingModal = ({
 						{search?.car && <img src={search?.car?.imgPath} alt="car_img" />}
 					</div>
 				</div>
+
 				{/* personal info */}
 				<div className="booking-modal__person-info">
 					<h4>Personal Information</h4>
 					<div className="info-form">
 						<div className="info-form__2col">
-							<span>
-								<Field label={'First Name'} error={errors.firstName}>
-									<input
-										{...register('firstName', {
-											required: 'First Name is required',
-										})}
-										type="text"
-										placeholder="Enter your first name"
-									/>
-								</Field>
-							</span>
-
-							<span>
-								<Field label={'Last Name'} error={errors.LastName}>
-									<input
-										{...register('LastName', {
-											required: 'Last Name is required',
-										})}
-										type="text"
-										placeholder="Enter your last name"
-									/>
-								</Field>
-							</span>
-
-							<span>
-								<Field label={'Phone Number'} error={errors.phoneNo}>
-									<input
-										{...register('phoneNo', {
-											required: 'Phone number is required',
-										})}
-										type="tel"
-										placeholder="Enter your phone number"
-									/>
-								</Field>
-							</span>
-
-							<span>
-								<Field label={'Age'} error={errors.age}>
-									<input
-										{...register('age', {
-											required: 'Age is required',
-										})}
-										type="number"
-										placeholder="Enter your age"
-									/>
-								</Field>
-							</span>
-						</div>
-
-						<div className="info-form__1col">
-							<Field label={'Email'} error={errors.email}>
-								<input
-									{...register('email', {
-										required: 'Email is required',
-									})}
-									type="email"
-									placeholder="Enter your email"
-								/>
-							</Field>
-
-							<Field label={'address'} error={errors.address}>
-								<input
-									{...register('Address', {
-										required: 'Address is required',
-									})}
-									type="text"
-									placeholder="Enter your address"
-								/>
-							</Field>
-						</div>
-
-						<div className="info-form__2col">
-							<Field label={'City'} error={errors.city}>
-								<input
-									{...register('city', {
-										required: 'City is required',
-									})}
-									type="tel"
-									placeholder="Enter your city"
-								></input>
-							</Field>
-
-							<Field label={'Zip Code'} error={errors.zipCode}>
-								<input
-									{...register('zipCode', {
-										required: 'Zip code is required',
-									})}
-									type="tel"
-									placeholder="Enter your zip code"
-								></input>
-							</Field>
+							{personalInfoInputElements.map((personalInfo) => (
+								<span key={crypto.randomUUID()}>
+									<Field
+										label={personalInfo.label}
+										error={errors[personalInfo.name]}
+									>
+										<input
+											{...register(personalInfo.name, {
+												required: `${personalInfo.label} is required`,
+											})}
+											type="text"
+											placeholder={`Enter your ${personalInfo.label.toLowerCase()}`}
+										/>
+									</Field>
+								</span>
+							))}
 						</div>
 
 						<span className="info-form__checkbox">
