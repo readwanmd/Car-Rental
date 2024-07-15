@@ -1,4 +1,5 @@
 import Footer from './common/Footer';
+import HeroPages from './common/HeroPages.jsx';
 import Navbar from './common/Navbar';
 //Home page Components
 import Banner from './home/Banner';
@@ -19,6 +20,7 @@ export {
 	Faq,
 	Footer,
 	Hero,
+	HeroPages,
 	Navbar,
 	PickCar,
 	PlanTrip,

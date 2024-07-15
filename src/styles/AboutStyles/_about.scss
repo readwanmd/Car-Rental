@@ -4,7 +4,7 @@
 .hero-pages {
 	width: 100%;
 	height: 41rem;
-	background-image: url('/src/images/hero/heroes-bg.png');
+	background-image: url('/public/images/hero/heroes-bg.png');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -129,6 +129,7 @@
 			&__box {
 				display: flex;
 				flex-direction: column;
+				justify-content: space-between;
 
 				@media (max-width: 520px) {
 					align-items: center;
@@ -154,6 +155,11 @@
 
 					h4 {
 						font-size: 4.6rem;
+					}
+
+					p {
+						margin-bottom: 0;
+						margin-top: 0;
 					}
 				}
 			}
