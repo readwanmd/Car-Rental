@@ -1,6 +1,6 @@
 import { IconPhone } from '@tabler/icons-react';
 
-function BookBanner() {
+const BookingBanner = () => {
 	return (
 		<div className="book-banner">
 			<div className="book-banner__overlay"></div>
@@ -15,6 +15,5 @@ function BookBanner() {
 			</div>
 		</div>
 	);
-}
-
-export default BookBanner;
+};
+export default BookingBanner;

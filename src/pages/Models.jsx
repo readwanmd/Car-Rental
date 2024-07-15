@@ -1,5 +1,5 @@
 import { HeroPages } from '../components';
-import BookBanner from '../components/about/BookBanner';
+import BookingBanner from '../components/common/BookingBanner';
 import ModelCards from '../components/models/ModelCards';
 
 function Models() {
@@ -12,7 +12,7 @@ function Models() {
 						<ModelCards />
 					</div>
 				</div>
-				<BookBanner />
+				<BookingBanner />
 			</section>
 		</>
 	);

@@ -1,6 +1,6 @@
 import { HeroPages, PlanTrip } from '../components';
 import AboutMain from '../components/about/AboutMain';
-import BookBanner from '../components/about/BookBanner';
+import BookingBanner from '../components/common/BookingBanner';
 
 function About() {
 	return (
@@ -12,7 +12,7 @@ function About() {
 					<PlanTrip />
 				</div>
 			</section>
-			<BookBanner />
+			<BookingBanner />
 		</>
 	);
 }
