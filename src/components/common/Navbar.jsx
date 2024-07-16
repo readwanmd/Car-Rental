@@ -1,13 +1,25 @@
 import { IconMenu2, IconX } from '@tabler/icons-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import AuthModal from '../auth/AuthModal';
 import Logo from '/images/logo/logo.png';
 
 function Navbar() {
 	const [nav, setNav] = useState(false);
+	const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
+	const [authMode, setAuthMode] = useState('login'); // 'login' or 'register'
 
 	const openNav = () => {
 		setNav(!nav);
+	};
+
+	const handleAuthModalOpen = (mode) => {
+		setAuthMode(mode);
+		setIsAuthModalOpen(true);
+	};
+
+	const handleAuthModalClose = () => {
+		setIsAuthModalOpen(false);
 	};
 
 	return (
@@ -98,12 +110,18 @@ function Navbar() {
 						</li>
 					</ul>
 					<div className="navbar__buttons">
-						<Link className="navbar__buttons__sign-in" to="/">
+						<button
+							className="navbar__buttons__sign-in"
+							onClick={() => handleAuthModalOpen('login')}
+						>
 							Sign In
-						</Link>
-						<Link className="navbar__buttons__register" to="/">
+						</button>
+						<button
+							className="navbar__buttons__register"
+							onClick={() => handleAuthModalOpen('register')}
+						>
 							Register
-						</Link>
+						</button>
 					</div>
 
 					{/* mobile */}
@@ -112,6 +130,14 @@ function Navbar() {
 					</div>
 				</div>
 			</nav>
+
+			{isAuthModalOpen && (
+				<AuthModal
+					isOpen={isAuthModalOpen}
+					onClose={handleAuthModalClose}
+					mode={authMode}
+				/>
+			)}
 		</>
 	);
 }

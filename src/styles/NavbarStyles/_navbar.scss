@@ -61,6 +61,10 @@
 		}
 
 		&__sign-in {
+			outline: none;
+			border: 1px solid $gray;
+			background-color: transparent;
+			padding: 1.3rem 3rem;
 			color: $text-black;
 			cursor: pointer;
 			transition: all 0.3s;
@@ -71,6 +75,8 @@
 		}
 
 		&__register {
+			outline: none;
+			border: none;
 			background-color: $primary;
 			color: white;
 			padding: 1.5rem 3rem;
