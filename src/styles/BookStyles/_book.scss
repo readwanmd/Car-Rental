@@ -14,11 +14,11 @@
 		background-color: $white;
 		width: 100%;
 		padding: 4rem 4.5rem 5rem 5.5rem;
-		box-shadow: 0 10px 20px 0 rgb(0 0 0 / 10%);
+		box-shadow: 0 10px 20px 0 rgba($black, 0.1);
 		height: auto;
 		position: relative;
 		z-index: 4;
-		color: white;
+		color: $white;
 		border-radius: 5px;
 		background-image: url('/src/images/book-car/book-bg.png');
 		background-position: center center;
@@ -137,7 +137,7 @@
 			font-family: $text-font;
 			font-size: 1.8rem;
 			font-weight: 500;
-			color: white;
+			color: $white;
 			background-color: $primary;
 			box-shadow: 0 10px 15px rgba($primary, 0.35);
 			cursor: pointer;
@@ -172,8 +172,8 @@
 }
 
 .booking-done {
-	color: #2a6817;
-	background-color: #c3fabe;
+	color: $primary;
+	background-color: rgba($primary, 0.75);
 	border-color: #f5c6cb;
 	padding: 1rem 1.4rem;
 	margin-bottom: 1.8rem;
@@ -257,12 +257,12 @@
 
 		i {
 			font-size: 2.5rem;
-			color: #ffffffea;
+			color: rgba($primary, 0.918);
 			cursor: pointer;
 			transition: all 0.2;
 
 			&:hover {
-				color: white;
+				color: $white;
 			}
 		}
 	}
@@ -272,7 +272,7 @@
 		flex-direction: column;
 		gap: 1.5rem;
 		padding: 2rem 3rem;
-		background-color: #ffeae6;
+		background-color: rgba($primary, 0.2);
 
 		h4 {
 			font-size: 1.9rem;
@@ -286,7 +286,7 @@
 
 		p {
 			font-size: 1.7rem;
-			color: #777777;
+			color: $gray;
 			font-weight: 500;
 			line-height: 1.6;
 		}
@@ -327,7 +327,7 @@
 				i {
 					font-size: 1.8rem;
 					padding-top: 0.2rem;
-					color: #777777;
+					color: $gray;
 
 					@media (max-width: 650px) {
 						display: none;
@@ -343,7 +343,7 @@
 					display: flex;
 					align-items: center;
 					font-size: $p-size;
-					color: #777777;
+					color: $gray;
 				}
 			}
 		}
@@ -404,7 +404,7 @@
 		gap: 1rem;
 		align-items: center;
 		font-size: $p-size;
-		color: #565454;
+		color: $gray;
 		margin-top: 2rem;
 		margin-bottom: 3rem;
 
@@ -438,7 +438,7 @@
 			label {
 				font-size: $p-size;
 				font-weight: 500;
-				color: #777777;
+				color: $gray;
 
 				b {
 					color: $primary;
@@ -448,7 +448,7 @@
 			input {
 				padding: 14px 15px;
 				background-color: #dbdbdb;
-				color: #555;
+				color: $gray;
 				font-size: 1.5rem;
 				font-weight: 500;
 				outline: none;
@@ -459,7 +459,7 @@
 }
 
 .reserve-button {
-	background-color: #dbdbdb;
+	background-color: rgba($primary, 0.1);
 	margin: 0 -3rem;
 	padding: 3rem;
 	text-align: right;
@@ -473,13 +473,14 @@
 		color: white;
 		font-weight: 700;
 		background-color: $primary;
-		border: 1px solid yellow;
+		border: none;
+		outline: none;
 		padding: 1.2rem 2rem;
 		cursor: pointer;
 		transition: all 0.2s;
 
 		&:hover {
-			background-color: #fe3516;
+			background-color: rgba;
 		}
 	}
 }
