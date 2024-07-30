@@ -1,9 +1,12 @@
 import { IconChevronRight, IconCircleCheck } from '@tabler/icons-react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import BgShape from '/images/hero/hero-bg.png';
 import HeroCar from '/images/hero/main-car.png';
 
 const Hero = () => {
+	const { t } = useTranslation();
+
 	return (
 		<section id="home" className="hero-section">
 			<div className="container">
@@ -12,7 +15,8 @@ const Hero = () => {
 					<div className="hero-content__text">
 						<h4>Plan your trip now</h4>
 						<h1>
-							Save <span>big</span> with our car rental
+							{/* Save <span>big</span> with our car rental */}
+							{t('hero')}
 						</h1>
 						<p>
 							Rent the car of your dreams. Unbeatable prices, unlimited miles,
