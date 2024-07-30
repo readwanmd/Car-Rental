@@ -5,8 +5,9 @@ import {
 	IconX,
 } from '@tabler/icons-react';
 import { useForm } from 'react-hook-form';
+import { useTranslation } from 'react-i18next';
 import Field from '../../common/Field‎';
-import { carInfoElements, personalInfoInputElements } from './inputFields';
+import useFormElements from './inputFields';
 
 const BookingModal = ({
 	modal,
@@ -14,6 +15,15 @@ const BookingModal = ({
 	initialBookingData: search,
 	handleBookingModal,
 }) => {
+	const { personalInfoInputElements, carInfoElements } = useFormElements();
+	const { t } = useTranslation('bookingModal');
+	const modal_title = t('modal_title');
+	const modal__message = t('modal__message');
+	const booking_info = t('booking_info');
+
+	const confirm_check_box = t('confirm_check_box');
+	const submit_btn = t('submit_btn');
+
 	const {
 		register,
 		handleSubmit,
@@ -32,25 +42,21 @@ const BookingModal = ({
 			>
 				{/* title */}
 				<div className="booking-modal__title">
-					<h2>Complete Reservation</h2>
+					<h2>{modal_title}</h2>
 					<IconX onClick={openModal} />
 				</div>
 				{/* message */}
 				<div className="booking-modal__message">
 					<h4>
-						<IconInfoCircleFilled /> Upon completing this reservation enquiry,
-						you will receive:
+						<IconInfoCircleFilled /> {modal__message.title}
 					</h4>
-					<p>
-						Your rental voucher to produce on arrival at the rental desk and a
-						toll-free customer support number.
-					</p>
+					<p>{modal__message.subtitle}</p>
 				</div>
 				{/* car info */}
 				<div className="booking-modal__car-info">
 					<div className="dates-div">
 						<div className="booking-modal__car-info__dates">
-							<h5>Location & Date</h5>
+							<h5>{booking_info.title}</h5>
 
 							{carInfoElements.map((carElement) => (
 								<div
@@ -83,7 +89,7 @@ const BookingModal = ({
 							<span>
 								<IconMapPinFilled />
 								<div>
-									<h6>Pick-Up Location</h6>
+									<h6>{booking_info.pickup_location}</h6>
 									<p>{search?.pickup}</p>
 								</div>
 							</span>
@@ -93,7 +99,7 @@ const BookingModal = ({
 							<span>
 								<IconMapPinFilled />
 								<div>
-									<h6>Drop-Off Location</h6>
+									<h6>{booking_info.dropoff_location}</h6>
 									<p>{search?.dropoff}</p>
 								</div>
 							</span>
@@ -132,11 +138,11 @@ const BookingModal = ({
 
 						<span className="info-form__checkbox">
 							<input type="checkbox" {...register('getUpdates')}></input>
-							<p>Please send me latest news and updates</p>
+							<p>{confirm_check_box}</p>
 						</span>
 
 						<div className="reserve-button">
-							<button>Reserve Now</button>
+							<button>{submit_btn}</button>
 						</div>
 					</div>
 				</div>

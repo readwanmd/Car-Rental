@@ -8,7 +8,7 @@ i18n
 	.use(LanguageDetector)
 	.use(Backend)
 	.init({
-		debug: false,
+		debug: true,
 		supportedLngs: ['en', 'ar', 'fr'],
 		fallbackLng: 'en',
 
