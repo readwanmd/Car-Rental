@@ -2,6 +2,7 @@ import { IconMenu2, IconX } from '@tabler/icons-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import AuthModal from '../auth/AuthModal';
+import LanguageSelect from './LanguageSelect';
 import Logo from '/images/logo/logo.png';
 
 function Navbar() {
@@ -61,6 +62,10 @@ function Navbar() {
 								Contact
 							</Link>
 						</li>
+
+						<li>
+							<LanguageSelect />
+						</li>
 					</ul>
 				</div>
 
@@ -110,6 +115,8 @@ function Navbar() {
 						</li>
 					</ul>
 					<div className="navbar__buttons">
+						<LanguageSelect />
+
 						<button
 							className="navbar__buttons__sign-in"
 							onClick={() => handleAuthModalOpen('login')}
