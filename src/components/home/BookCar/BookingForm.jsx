@@ -36,6 +36,8 @@ const BookingForm = ({ handleSearchSubmit }) => {
 	} = t('field_label');
 
 	const error = t('field_error');
+	const placeholder = t('placeholder');
+	console.log(placeholder);
 	const submit_btn = t('submit_btn');
 
 	const {
@@ -62,7 +64,7 @@ const BookingForm = ({ handleSearchSubmit }) => {
 				htmlClass={'box-form__car-type'}
 			>
 				<select {...register('car', { required: `${error.car_type}` })}>
-					<option value="">{car_type}</option>
+					<option value="">{placeholder.car_type}</option>
 					{carOptions.map((car, index) => (
 						<option key={car.model} value={index}>
 							{car.model}
@@ -80,7 +82,7 @@ const BookingForm = ({ handleSearchSubmit }) => {
 				<select
 					{...register('pickup', { required: `${error.pickup_location}` })}
 				>
-					<option value="">Select pick-up location</option>
+					<option value="">{placeholder.pickup_location}</option>
 					<option value="Belgrade">Belgrade</option>
 					<option value="Novi Sad">Novi Sad</option>
 					<option value="Nis">Nis</option>
@@ -100,7 +102,7 @@ const BookingForm = ({ handleSearchSubmit }) => {
 						required: `${error.dropoff_location}`,
 					})}
 				>
-					<option value="">Select drop-off location</option>
+					<option value="">{placeholder.dropoff_location}</option>
 					<option value="Novi Sad">Novi Sad</option>
 					<option value="Belgrade">Belgrade</option>
 					<option value="Nis">Nis</option>

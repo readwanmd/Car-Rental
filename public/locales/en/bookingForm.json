@@ -15,5 +15,11 @@
 		"dropoff_date": "Drop-off date is required"
 	},
 
+	"placeholder": {
+		"car_type": "Select Your Car Type",
+		"pickup_location": "Select Pick-up Location",
+		"dropoff_location": "Select Drop-off Location"
+	},
+
 	"submit_btn": "Search"
 }

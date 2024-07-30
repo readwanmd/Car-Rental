@@ -15,5 +15,11 @@
 		"dropoff_date": "تاريخ التسليم مطلوب"
 	},
 
+	"placeholder": {
+		"car_type": "اختر نوع السيارة",
+		"pickup_location": "اختر موقع الاستلام",
+		"dropoff_location": "اختر موقع التسليم"
+	},
+
 	"submit_btn": "بحث"
 }

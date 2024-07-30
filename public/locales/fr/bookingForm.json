@@ -15,5 +15,11 @@
 		"dropoff_date": "La date de dépose est requise"
 	},
 
+	"placeholder": {
+		"car_type": "Sélectionnez votre type de voiture",
+		"pickup_location": "Sélectionnez le lieu de prise en charge",
+		"dropoff_location": "Sélectionnez le lieu de dépose"
+	},
+
 	"submit_btn": "Rechercher"
 }
