@@ -17,8 +17,10 @@ i18n
 			caches: ['localStorage', 'cookie', 'sessionStorage'],
 		},
 
-		lng: localStorage.getItem('i18nextLng') || 'en',
+		// lng: localStorage.getItem('i18nextLng') || 'en',
 		// backend: {
 		// 	loadPath: '/locales/{{lng}}/translation.json',
 		// },
+
+		returnObjects: true,
 	});

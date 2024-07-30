@@ -1,9 +1,14 @@
 import { IconX } from '@tabler/icons-react';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import BookingForm from './BookingForm';
 import BookingModal from './BookingModal';
 
 function BookCar() {
+	const { t } = useTranslation('bookCar');
+	const title = t('title');
+	const confirm_email = t('confirm_email');
+
 	const [search, setSearch] = useState(null);
 	const [modal, setModal] = useState(false);
 	const [confirmBooking, setConfirmBooking] = useState(false);
@@ -37,11 +42,11 @@ function BookCar() {
 				<div className="container">
 					<div className="book-content">
 						<div className="book-content__box">
-							<h2>Book a car</h2>
+							<h2>{title}</h2>
 
 							{confirmBooking && (
 								<p className="booking-done">
-									Check your email to confirm an order.{' '}
+									{confirm_email}{' '}
 									<IconX
 										width={20}
 										height={20}

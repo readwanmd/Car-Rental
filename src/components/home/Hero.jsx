@@ -1,11 +1,14 @@
 import { IconChevronRight, IconCircleCheck } from '@tabler/icons-react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import BgShape from '/images/hero/hero-bg.png';
 import HeroCar from '/images/hero/main-car.png';
 
 const Hero = () => {
-	const { t } = useTranslation();
+	const { t } = useTranslation('hero');
+	const { line1, line2 } = t('title');
+	const subtitle = t('subtitle');
+	const { learn_more, book_ride } = t('button');
 
 	return (
 		<section id="home" className="hero-section">
@@ -13,24 +16,21 @@ const Hero = () => {
 				<img className="bg-shape" src={BgShape} alt="bg-shape" />
 				<div className="hero-content">
 					<div className="hero-content__text">
-						<h4>Plan your trip now</h4>
+						<h4>{line1}</h4>
 						<h1>
 							{/* Save <span>big</span> with our car rental */}
-							{t('hero')}
+							<Trans i18nKey={line2} components={{ 1: <span /> }} />
 						</h1>
-						<p>
-							Rent the car of your dreams. Unbeatable prices, unlimited miles,
-							flexible pick-up options and much more.
-						</p>
+						<p>{subtitle}</p>
 						<div className="hero-content__text__btns">
 							<a
 								href="#booking-section"
 								className="hero-content__text__btns__book-ride"
 							>
-								Book Ride &nbsp; <IconCircleCheck />
+								{book_ride} &nbsp; <IconCircleCheck />
 							</a>
 							<Link className="hero-content__text__btns__learn-more" to="/">
-								Learn More &nbsp; <IconChevronRight />
+								{learn_more} &nbsp; <IconChevronRight />
 							</Link>
 						</div>
 					</div>
