@@ -1,0 +1,19 @@
+{
+	"field_label": {
+		"car_type": "Sélectionnez votre type de voiture",
+		"pickup_location": "Lieu de prise en charge",
+		"dropoff_location": "Lieu de dépose",
+		"pickup_date": "Date de prise en charge",
+		"dropoff_date": "Date de dépose"
+	},
+
+	"field_error": {
+		"car_type": "Le type de voiture est requis",
+		"pickup_location": "Le lieu de prise en charge est requis",
+		"dropoff_location": "Le lieu de dépose est requis",
+		"pickup_date": "La date de prise en charge est requise",
+		"dropoff_date": "La date de dépose est requise"
+	},
+
+	"submit_btn": "Rechercher"
+}

@@ -5,6 +5,7 @@ import {
 	IconMapPinFilled,
 } from '@tabler/icons-react';
 import { useForm } from 'react-hook-form';
+import { useTranslation } from 'react-i18next';
 import {
 	audia1,
 	benz,
@@ -25,6 +26,18 @@ const carOptions = [
 ];
 
 const BookingForm = ({ handleSearchSubmit }) => {
+	const { t } = useTranslation('bookingForm');
+	const {
+		car_type,
+		pickup_location,
+		dropoff_location,
+		pickup_date,
+		dropoff_date,
+	} = t('field_label');
+
+	const error = t('field_error');
+	const submit_btn = t('submit_btn');
+
 	const {
 		register,
 		handleSubmit,
@@ -43,13 +56,13 @@ const BookingForm = ({ handleSearchSubmit }) => {
 	return (
 		<form onSubmit={handleSubmit(onSubmit)} className="box-form">
 			<Field
-				label="Select Your Car Type"
+				label={car_type}
 				icon={IconCar}
 				error={errors.car}
 				htmlClass={'box-form__car-type'}
 			>
-				<select {...register('car', { required: 'Car type is required' })}>
-					<option value="">Select your car type</option>
+				<select {...register('car', { required: `${error.car_type}` })}>
+					<option value="">{car_type}</option>
 					{carOptions.map((car, index) => (
 						<option key={car.model} value={index}>
 							{car.model}
@@ -59,13 +72,13 @@ const BookingForm = ({ handleSearchSubmit }) => {
 			</Field>
 
 			<Field
-				label="Pick-up Location"
+				label={pickup_location}
 				icon={IconMapPinFilled}
 				htmlClass={'box-form__car-type'}
 				error={errors.pickup}
 			>
 				<select
-					{...register('pickup', { required: 'Pick-up location is required' })}
+					{...register('pickup', { required: `${error.pickup_location}` })}
 				>
 					<option value="">Select pick-up location</option>
 					<option value="Belgrade">Belgrade</option>
@@ -77,14 +90,14 @@ const BookingForm = ({ handleSearchSubmit }) => {
 			</Field>
 
 			<Field
-				label="Drop-off Location"
+				label={dropoff_location}
 				icon={IconMapPinFilled}
 				htmlClass={'box-form__car-type'}
 				error={errors.dropoff}
 			>
 				<select
 					{...register('dropoff', {
-						required: 'Drop-off location is required',
+						required: `${error.dropoff_location}`,
 					})}
 				>
 					<option value="">Select drop-off location</option>
@@ -97,27 +110,27 @@ const BookingForm = ({ handleSearchSubmit }) => {
 			</Field>
 
 			<Field
-				label="Pick-up Date"
+				label={pickup_date}
 				icon={IconCalendarEvent}
 				htmlClass={'box-form__car-time'}
-				error={errors.pickupTime}
+				error={errors.pickupDate}
 			>
 				<input
-					{...register('pickupDate', { required: 'Pick-up date is required' })}
+					{...register('pickupDate', { required: `${error.pickup_date}` })}
 					id="pickdate"
 					type="date"
 				/>
 			</Field>
 
 			<Field
-				label="Drop-off Date"
+				label={dropoff_date}
 				icon={IconCalendarEvent}
 				htmlClass={'box-form__car-time'}
-				error={errors.dropoffTime}
+				error={errors.dropoffDate}
 			>
 				<input
 					{...register('dropoffDate', {
-						required: 'Drop-off date is required',
+						required: `${error.dropoff_date}`,
 					})}
 					id="dropdate"
 					type="date"
@@ -125,7 +138,7 @@ const BookingForm = ({ handleSearchSubmit }) => {
 			</Field>
 
 			<button type="submit" className="submit-button">
-				Search
+				{submit_btn}
 			</button>
 		</form>
 	);
