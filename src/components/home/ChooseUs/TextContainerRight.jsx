@@ -1,7 +1,9 @@
-import { rightCardData } from './cardData';
+import useRightCardData from './cardData';
 import TextBox from './TextBox';
 
 function TextContainerRight() {
+	const { rightCardData } = useRightCardData();
+
 	return (
 		<div className="text-container__right">
 			{rightCardData.map((card) => (

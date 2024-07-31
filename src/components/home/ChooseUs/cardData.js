@@ -1,22 +1,29 @@
+import { useTranslation } from 'react-i18next';
 import { chooseIcon1, chooseIcon2, chooseIcon3 } from '/public';
 
-export const rightCardData = [
-	{
-		img: chooseIcon1,
-		title: 'Cross Country Drive',
-		description:
-			'Take your driving experience to the next level with our top-notch vehicles for your cross-country adventures.',
-	},
-	{
-		img: chooseIcon2,
-		title: 'All Inclusive Pricing',
-		description:
-			'Get everything you need in one convenient, transparent price with our all-inclusive pricing policy.',
-	},
-	{
-		img: chooseIcon3,
-		title: 'No Hidden Charges',
-		description:
-			'Enjoy peace of mind with our no hidden charges policy. We believe in transparent and honest pricing.',
-	},
-];
+const useRightCardData = () => {
+	const { t } = useTranslation('chooseUs');
+	const { card1, card2, card3 } = t('cards');
+
+	const rightCardData = [
+		{
+			img: chooseIcon1,
+			title: `${card1.title}`,
+			description: `${card1.description}`,
+		},
+		{
+			img: chooseIcon2,
+			title: `${card2.title}`,
+			description: `${card2.description}`,
+		},
+		{
+			img: chooseIcon3,
+			title: `${card3.title}`,
+			description: `${card3.description}`,
+		},
+	];
+
+	return { rightCardData };
+};
+
+export default useRightCardData;
