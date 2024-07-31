@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import FaqCard from './FaqCard';
-import { faqData } from './FaqData';
+import useFaqData from './FaqData';
 import FaqTitle from './FaqTitle';
 
 function Faq() {
+	const { faqData } = useFaqData();
 	const [activeQuestionId, setActiveQuestionId] = useState('');
 
 	const handleToggleQuestion = (id) => {

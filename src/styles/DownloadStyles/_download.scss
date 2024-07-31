@@ -1,7 +1,12 @@
 @use '../global' as *;
 
 .download-section {
-	background-image: url('/images/banners/bg02.png');
+	&:dir(ltr) {
+		background-image: url('/images/banners/bg02.png');
+	}
+	&:dir(rtl) {
+		background-image: url('/images/banners/bg02_.png');
+	}
 	background-color: $bg-gray;
 	background-position: top center;
 	background-repeat: no-repeat;

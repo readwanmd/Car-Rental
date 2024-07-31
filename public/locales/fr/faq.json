@@ -1,0 +1,20 @@
+{
+	"line1": "FAQ",
+	"section_title": "Questions Fréquemment Posées",
+	"subtitle": "Questions Fréquemment Posées sur le Processus de Réservation de Location de Voiture sur Notre Site Web : Réponses aux Préoccupations et Questions Courantes.",
+
+	"faqs": {
+		"faq1": {
+			"question": "1. Qu'est-ce qui est spécial dans la comparaison des offres de location de voiture ?",
+			"answer": "Comparer les offres de location de voiture est important car cela aide à trouver la meilleure offre qui correspond à votre budget et à vos exigences, en vous assurant d'obtenir le meilleur rapport qualité-prix. En comparant diverses options, vous pouvez trouver des offres avec des prix plus bas, des services supplémentaires ou de meilleurs modèles de voitures. Vous pouvez trouver des offres de location de voiture en recherchant en ligne et en comparant les prix des différentes entreprises de location."
+		},
+		"faq2": {
+			"question": "2. Comment trouver les offres de location de voiture ?",
+			"answer": "Vous pouvez trouver des offres de location de voiture en recherchant en ligne et en comparant les prix des différentes entreprises de location. Des sites Web tels qu'Expedia, Kayak et Travelocity vous permettent de comparer les prix et de voir les options de location disponibles. Il est également recommandé de s'inscrire aux newsletters par e-mail et de suivre les entreprises de location de voitures sur les réseaux sociaux pour être informé des offres spéciales ou des promotions."
+		},
+		"faq3": {
+			"question": "3. Comment trouver des prix de location de voiture aussi bas ?",
+			"answer": "Réservez à l'avance : Réserver votre voiture de location à l'avance peut souvent entraîner des prix plus bas. Comparez les prix de plusieurs entreprises : Utilisez des sites Web tels que Kayak, Expedia ou Travelocity pour comparer les prix de plusieurs entreprises de location de voitures. Recherchez des codes de réduction et des coupons : Cherchez des codes de réduction et des coupons que vous pouvez utiliser pour réduire le prix de location. Louer dans un endroit hors aéroport peut parfois entraîner des prix plus bas."
+		}
+	}
+}
