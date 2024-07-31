@@ -1,9 +1,16 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import CarBox from './CarBox';
 import useCarData from './carData';
 
 function PickCar() {
 	const { CAR_DATA } = useCarData();
+
+	const { t } = useTranslation('pickCar');
+	const line1 = t('line1');
+	const section_title = t('section_title');
+	const subtitle = t('subtitle');
+
 	const [activeCarIndex, setActiveCarIndex] = useState(0);
 	const [activeButton, setActiveButton] = useState('btn1');
 
@@ -20,12 +27,9 @@ function PickCar() {
 			<div className="container">
 				<div className="pick-container">
 					<div className="pick-container__title">
-						<h3>Vehicle Models</h3>
-						<h2>Our rental fleet</h2>
-						<p>
-							Choose from a variety of our amazing vehicles to rent for your
-							next adventure or business trip.
-						</p>
+						<h3>{line1}</h3>
+						<h2>{section_title}</h2>
+						<p>{subtitle}</p>
 					</div>
 					<div className="pick-container__car-content">
 						<div className="pick-box">
