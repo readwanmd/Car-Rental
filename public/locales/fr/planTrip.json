@@ -1,0 +1,19 @@
+{
+	"line1": "Planifiez votre voyage maintenant",
+	"section_title": "Location de voiture rapide et facile",
+
+	"cards": {
+		"card1": {
+			"title": "Sélectionnez une voiture",
+			"desc": "Nous offrons une large gamme de véhicules pour tous vos besoins de conduite. Nous avons la voiture parfaite pour répondre à vos besoins"
+		},
+		"card2": {
+			"title": "Contactez l'opérateur",
+			"desc": "Nos opérateurs compétents et amicaux sont toujours prêts à aider pour toute question ou préoccupation"
+		},
+		"card3": {
+			"title": "Allons-y",
+			"desc": "Que vous preniez la route, nous avons ce qu'il vous faut avec notre large gamme de voitures"
+		}
+	}
+}

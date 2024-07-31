@@ -1,19 +1,29 @@
+import { useTranslation } from 'react-i18next';
 import { planIcon1, planIcon2, planIcon3 } from '../../../../public';
 
-export const planCardData = [
-	{
-		title: 'Select Car',
-		desc: 'We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs',
-		icon: planIcon1,
-	},
-	{
-		title: 'Contact Operator',
-		desc: 'Our knowledgeable and friendly operators are always ready to	help with any questions or concerns',
-		icon: planIcon2,
-	},
-	{
-		title: "Let's Drive",
-		desc: "Whether you're hitting the open road, we've got you covered with our wide range of cars",
-		icon: planIcon3,
-	},
-];
+const usePlanCardData = () => {
+	const { t } = useTranslation('planTrip');
+	const { card1, card2, card3 } = t('cards');
+
+	const planCardData = [
+		{
+			title: `${card1.title}`,
+			desc: `${card1.desc}`,
+			icon: planIcon1,
+		},
+		{
+			title: `${card2.title}`,
+			desc: `${card2.desc}`,
+			icon: planIcon2,
+		},
+		{
+			title: `${card3.title}`,
+			desc: `${card3.desc}`,
+			icon: planIcon3,
+		},
+	];
+
+	return { planCardData };
+};
+
+export default usePlanCardData;
