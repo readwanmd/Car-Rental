@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import CarBox from './CarBox';
-import { CAR_DATA } from './carData';
+import useCarData from './carData';
 
 function PickCar() {
+	const { CAR_DATA } = useCarData();
 	const [activeCarIndex, setActiveCarIndex] = useState(0);
 	const [activeButton, setActiveButton] = useState('btn1');
 
