@@ -99,7 +99,15 @@
 	color: $primary;
 	position: absolute;
 	bottom: 33px;
-	right: 60px;
+
+	&:dir(ltr) {
+		right: 50px;
+	}
+
+	&:dir(rtl) {
+		left: 50px;
+		transform: scaleX(-1);
+	}
 
 	@media (max-width: 470px) {
 		display: none;

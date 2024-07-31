@@ -1,0 +1,18 @@
+{
+	"line1": "Reviewed by People",
+	"section_title": "Client's Testimonials",
+	"subtitle": "Discover the positive impact we've made on the our clients by reading through their testimonials. Our clients have experienced our service and results, and they're eager to share their positive experiences with you.",
+
+	"cards": {
+		"card1": {
+			"quote": "We rented a car from this website and had an amazing experience! The booking was easy and the rental rates were very affordable.",
+			"name": "Parry Hotter",
+			"location": "Belgrade"
+		},
+		"card2": {
+			"quote": "The car was in great condition and made our trip even better. Highly recommend for this car rental website!",
+			"name": "Ron Rizzly",
+			"location": "Novi Sad"
+		}
+	}
+}

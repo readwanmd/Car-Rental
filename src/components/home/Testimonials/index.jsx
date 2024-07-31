@@ -1,9 +1,10 @@
 import TestimonialCard from './TestimonialCard';
-import { testimonials } from './testimonialData';
+import useTestimonials from './testimonialData';
+
 import TestimonialsTitle from './TestimonialsTitle';
-import Img2 from '/images/testimonials/pfp1.jpg';
 
 function Testimonials() {
+	const { testimonials } = useTestimonials();
 	return (
 		<section className="testimonials-section">
 			<div className="container">
@@ -13,12 +14,10 @@ function Testimonials() {
 						{testimonials.map((testimonial) => (
 							<TestimonialCard
 								key={crypto.randomUUID()}
-								quote="We rented a car from this website and had an amazing
-							experience! The booking was easy and the rental rates were
-							very affordable."
-								imgSrc={Img2}
-								name="Parry Hotter"
-								location="Belgrade"
+								quote={testimonial.quote}
+								imgSrc={testimonial.imgSrc}
+								name={testimonial.name}
+								location={testimonial.location}
 							/>
 						))}
 					</div>

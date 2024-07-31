@@ -1,0 +1,18 @@
+{
+	"line1": "Avis des personnes",
+	"section_title": "Témoignages des clients",
+	"subtitle": "Découvrez l'impact positif que nous avons eu sur nos clients en lisant leurs témoignages. Nos clients ont vécu notre service et les résultats, et ils sont impatients de partager leurs expériences positives avec vous.",
+
+	"cards": {
+		"card1": {
+			"quote": "Nous avons loué une voiture sur ce site et avons eu une expérience incroyable ! La réservation était facile et les tarifs de location étaient très abordables.",
+			"name": "Parry Hotter",
+			"location": "Belgrade"
+		},
+		"card2": {
+			"quote": "La voiture était en excellent état et a rendu notre voyage encore meilleur. Je recommande vivement ce site de location de voitures !",
+			"name": "Ron Rizzly",
+			"location": "Novi Sad"
+		}
+	}
+}

@@ -1,18 +1,26 @@
+import { useTranslation } from 'react-i18next';
 import { pfp1, pfp2 } from '/public';
 
-export const testimonials = [
-	{
-		quote:
-			'We rented a car from this website and had an amazing experience! The booking was easy and the rental rates were very affordable.',
-		imgSrc: { pfp1 },
-		name: 'Parry Hotter',
-		location: 'Belgrade',
-	},
-	{
-		quote:
-			'The car was in great condition and made our trip even better. Highly recommend for this car rental website!',
-		imgSrc: { pfp2 },
-		name: 'Ron Rizzly',
-		location: 'Novi Sad',
-	},
-];
+const useTestimonials = () => {
+	const { t } = useTranslation('testimonials');
+	const { card1, card2 } = t('cards');
+
+	const testimonials = [
+		{
+			quote: `${card1.quote}`,
+			imgSrc: pfp1,
+			name: `${card1.name}`,
+			location: `${card1.location}`,
+		},
+		{
+			quote: `${card2.quote}`,
+			imgSrc: pfp2,
+			name: `${card2.name}`,
+			location: `${card2.location}`,
+		},
+	];
+
+	return { testimonials };
+};
+
+export default useTestimonials;
