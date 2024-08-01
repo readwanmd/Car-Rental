@@ -1,0 +1,42 @@
+{
+	"cars": {
+		"per_day": "par jour",
+		"book_ride": "Balade en livre",
+		"car1": {
+			"price": "45",
+			"seats": "4/5",
+			"transmission": "Manuel",
+			"fuel": "Diesel"
+		},
+		"car2": {
+			"price": "37",
+			"seats": "4/5",
+			"transmission": "Manuel",
+			"fuel": "Diesel"
+		},
+		"car3": {
+			"price": "30",
+			"seats": "4/5",
+			"transmission": "Manuel",
+			"fuel": "Diesel"
+		},
+		"car4": {
+			"price": "35",
+			"seats": "4/5",
+			"transmission": "Manuel",
+			"fuel": "Diesel"
+		},
+		"car5": {
+			"price": "50",
+			"seats": "4/5",
+			"transmission": "Manuel",
+			"fuel": "Diesel"
+		},
+		"car6": {
+			"price": "25",
+			"seats": "4/5",
+			"transmission": "Manuel",
+			"fuel": "Diesel"
+		}
+	}
+}

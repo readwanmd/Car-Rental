@@ -1,7 +1,8 @@
 import ModelCard from './ModelCard';
-import { modelData } from './modelData';
+import useModelData from './modelData';
 
 const ModelCards = () => {
+	const { modelData } = useModelData();
 	return (
 		<>
 			{modelData.map((model, index) => (
