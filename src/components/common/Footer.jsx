@@ -1,6 +1,13 @@
 import { IconMail, IconPhoneCall } from '@tabler/icons-react';
+import { useTranslation } from 'react-i18next';
+import LanguageSelect from './LanguageSelect';
 
 function Footer() {
+	const { t } = useTranslation('footer');
+	const desc = t('desc');
+	const working_hours = t('working_hours');
+	const company = t('company');
+	const subscription = t('subscription');
 	return (
 		<>
 			<footer>
@@ -10,10 +17,7 @@ function Footer() {
 							<li>
 								<span>CAR</span> Rental
 							</li>
-							<li>
-								We offers a big range of vehicles for all your driving needs. We
-								have the perfect car to meet your needs.
-							</li>
+							<li>{desc}</li>
 							<li>
 								<a href="tel:123456789">
 									<IconPhoneCall /> &nbsp; (123) -456-789
@@ -29,55 +33,50 @@ function Footer() {
 									&nbsp; carrental@gmail.com
 								</a>
 							</li>
+						</ul>
 
+						<ul className="footer-content__2">
+							<li>{company.title}</li>
 							<li>
-								<a
-									style={{ fontSize: '14px' }}
-									target="_blank"
-									rel="noreferrer"
-									href="https://xpeedstudio.com/"
-								>
-									Design by XpeedStudio
-								</a>
+								<a href="#home">{company.li1}</a>
+							</li>
+							<li>
+								<a href="#home">{company.li2}</a>
+							</li>
+							<li>
+								<a href="#home">{company.li3}</a>
+							</li>
+							<li>
+								<a href="#home">{company.li4}</a>
+							</li>
+							<li>
+								<a href="#home">{company.li5}</a>
 							</li>
 						</ul>
 
 						<ul className="footer-content__2">
-							<li>Company</li>
+							<li>{working_hours.title}</li>
+							<li>{working_hours.li1}</li>
+							<li>{working_hours.li2}</li>
+							<li>{working_hours.li3}</li>
 							<li>
-								<a href="#home">New York</a>
-							</li>
-							<li>
-								<a href="#home">Careers</a>
-							</li>
-							<li>
-								<a href="#home">Mobile</a>
-							</li>
-							<li>
-								<a href="#home">Blog</a>
-							</li>
-							<li>
-								<a href="#home">How we work</a>
+								<LanguageSelect />
 							</li>
 						</ul>
 
 						<ul className="footer-content__2">
-							<li>Working Hours</li>
-							<li>Mon - Fri: 9:00AM - 9:00PM</li>
-							<li>Sat: 9:00AM - 19:00PM</li>
-							<li>Sun: Closed</li>
-						</ul>
-
-						<ul className="footer-content__2">
-							<li>Subscription</li>
+							<li>{subscription.title}</li>
 							<li>
-								<p>Subscribe your Email address for latest news & updates.</p>
+								<p>{subscription.subtitle}</p>
 							</li>
 							<li>
-								<input type="email" placeholder="Enter Email Address"></input>
+								<input
+									type="email"
+									placeholder={subscription.placeholder}
+								></input>
 							</li>
 							<li>
-								<button className="submit-email">Submit</button>
+								<button className="submit-email">{subscription.submit}</button>
 							</li>
 						</ul>
 					</div>

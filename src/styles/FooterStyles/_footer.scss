@@ -35,6 +35,8 @@ footer {
 				text-decoration: none;
 				color: $text-black;
 				transition: all 0.2s;
+				display: flex;
+				align-items: center;
 
 				&:hover {
 					color: $primary;

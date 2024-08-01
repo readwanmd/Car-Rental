@@ -16,3 +16,7 @@
 @forward '../styles/ContactStyles';
 @forward '../styles/BackToTop/';
 @forward '../styles/AuthStyles/';
+
+body {
+	overflow-x: hidden;
+}

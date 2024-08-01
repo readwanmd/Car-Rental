@@ -1,0 +1,25 @@
+{
+	"desc": "We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs.",
+	"working_hours": {
+		"title": "Working Hours",
+		"li1": "Mon - Fri: 9:00AM - 9:00PM",
+		"li2": "Sat: 9:00AM - 19:00PM",
+		"li3": "Sun: Closed"
+	},
+
+	"company": {
+		"title": "Company",
+		"li1": "New York",
+		"li2": "Career",
+		"li3": "Mobile",
+		"li4": "Blog",
+		"li5": "How we work"
+	},
+
+	"subscription": {
+		"title": "Subscription",
+		"subtitle": "Subscribe your Email address for latest news & updates.",
+		"placeholder": "Enter Email Address",
+		"submit": "Submit"
+	}
+}
