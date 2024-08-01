@@ -25,13 +25,14 @@ const LanguageSelect = () => {
 	};
 
 	return (
-		<form className="form-container">
+		<form>
 			<Controller
 				name="language"
 				control={control}
 				render={({ field }) => (
 					<select
 						id="language"
+						className="navbar__buttons__sign-in"
 						{...field}
 						onChange={(e) => {
 							field.onChange(e);
