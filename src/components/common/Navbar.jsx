@@ -1,11 +1,16 @@
 import { IconMenu2, IconX } from '@tabler/icons-react';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import AuthModal from '../auth/AuthModal';
 import LanguageSelect from './LanguageSelect';
 import Logo from '/images/logo/logo.png';
 
 function Navbar() {
+	const { t } = useTranslation('navbar');
+	const { home, about, vehicle_Models, testimonials, our_team, contact } =
+		t('navitems');
+
 	const [nav, setNav] = useState(false);
 	const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
 	const [authMode, setAuthMode] = useState('login'); // 'login' or 'register'
@@ -34,32 +39,32 @@ function Navbar() {
 					<ul className="mobile-navbar__links">
 						<li>
 							<Link onClick={openNav} to="/">
-								Home
+								{home}
 							</Link>
 						</li>
 						<li>
 							<Link onClick={openNav} to="/about">
-								About
+								{about}
 							</Link>
 						</li>
 						<li>
 							<Link onClick={openNav} to="/models">
-								Models
+								{vehicle_Models}
 							</Link>
 						</li>
 						<li>
 							<Link onClick={openNav} to="/testimonials">
-								Testimonials
+								{testimonials}
 							</Link>
 						</li>
 						<li>
 							<Link onClick={openNav} to="/team">
-								Our Team
+								{our_team}
 							</Link>
 						</li>
 						<li>
 							<Link onClick={openNav} to="/contact">
-								Contact
+								{contact}
 							</Link>
 						</li>
 
@@ -80,37 +85,37 @@ function Navbar() {
 					<ul className="navbar__links">
 						<li>
 							<Link className="home-link" to="/">
-								Home
+								{home}
 							</Link>
 						</li>
 						<li>
 							{' '}
 							<Link className="about-link" to="/about">
-								About
+								{about}
 							</Link>
 						</li>
 						<li>
 							{' '}
 							<Link className="models-link" to="/models">
-								Vehicle Models
+								{vehicle_Models}
 							</Link>
 						</li>
 						<li>
 							{' '}
 							<Link className="testi-link" to="/testimonials">
-								Testimonials
+								{testimonials}
 							</Link>
 						</li>
 						<li>
 							{' '}
 							<Link className="team-link" to="/team">
-								Our Team
+								{our_team}
 							</Link>
 						</li>
 						<li>
 							{' '}
 							<Link className="contact-link" to="/contact">
-								Contact
+								{contact}
 							</Link>
 						</li>
 					</ul>
