@@ -1,15 +1,16 @@
 import { IconLocation, IconMail, IconPhone } from '@tabler/icons-react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 function ContactText() {
+	const { t } = useTranslation('contact_us');
+	const title = t('title');
+	const desc = t('desc');
+
 	return (
 		<div className="contact-div__text">
-			<h2>Need additional information?</h2>
-			<p>
-				A multifaceted professional skilled in multiple fields of research,
-				development as well as a learning specialist. Over 15 years of
-				experience.
-			</p>
+			<h2>{title}</h2>
+			<p>{desc}</p>
 			<Link>
 				<IconPhone /> &nbsp; (123) 456-7869
 			</Link>
