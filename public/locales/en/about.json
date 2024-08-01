@@ -1,0 +1,21 @@
+{
+	"page": "About",
+	"line1": "About Company",
+	"title": "You start the engine and your adventure begins",
+	"desc": "Certain but she but shyness why cottage. Guy the put instrument sir entreaties affronting. Pretended exquisite see cordially the you. Weeks quiet do vexed or whose. Motionless if no to affronting imprudence no precaution. My indulged as disposal strongly attended.",
+
+	"cards": {
+		"card1": {
+			"count": 20,
+			"title": "Car Type"
+		},
+		"card2": {
+			"count": 85,
+			"title": "Rental Outlets"
+		},
+		"card3": {
+			"count": 75,
+			"title": "Repair Shop"
+		}
+	}
+}

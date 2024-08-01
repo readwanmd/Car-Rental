@@ -1,0 +1,25 @@
+{
+	"field_label": {
+		"car_type": "اختر نوع السيارة",
+		"pickup_location": "موقع الاستلام",
+		"dropoff_location": "موقع التسليم",
+		"pickup_date": "تاريخ الاستلام",
+		"dropoff_date": "تاريخ التسليم"
+	},
+
+	"field_error": {
+		"car_type": "نوع السيارة مطلوب",
+		"pickup_location": "موقع الاستلام مطلوب",
+		"dropoff_location": "موقع التسليم مطلوب",
+		"pickup_date": "تاريخ الاستلام مطلوب",
+		"dropoff_date": "تاريخ التسليم مطلوب"
+	},
+
+	"placeholder": {
+		"car_type": "اختر نوع السيارة",
+		"pickup_location": "اختر موقع الاستلام",
+		"dropoff_location": "اختر موقع التسليم"
+	},
+
+	"submit_btn": "بحث"
+}

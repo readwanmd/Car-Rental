@@ -1,0 +1,24 @@
+{
+	"title": "Need additional information?",
+	"desc": "A multifaceted professional skilled in multiple fields of research, development as well as a learning specialist. Over 15 years of experience.",
+
+	"contact_form": {
+		"name": {
+			"label": "Full Name",
+			"placeholder": "Jane Doe",
+			"error": "Name is required"
+		},
+		"email": {
+			"label": "Email",
+			"placeholder": "example@example.com",
+			"error": "Email is required"
+		},
+		"message": {
+			"label": "Message",
+			"placeholder": "Write message",
+			"error": "Message is required"
+		}
+	},
+
+	"send_message": "Send Message"
+}

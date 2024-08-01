@@ -1,0 +1,42 @@
+{
+	"cars": {
+		"per_day": "في اليوم",
+		"book_ride": "حجز رحلة",
+		"car1": {
+			"price": "٤٥",
+			"seats": "٤/٥",
+			"transmission": "يدوي",
+			"fuel": "ديزل"
+		},
+		"car2": {
+			"price": "٣٧",
+			"seats": "٤/٥",
+			"transmission": "يدوي",
+			"fuel": "ديزل"
+		},
+		"car3": {
+			"price": "٣٠",
+			"seats": "٤/٥",
+			"transmission": "يدوي",
+			"fuel": "ديزل"
+		},
+		"car4": {
+			"price": "٣٥",
+			"seats": "٤/٥",
+			"transmission": "يدوي",
+			"fuel": "ديزل"
+		},
+		"car5": {
+			"price": "٥٠",
+			"seats": "٤/٥",
+			"transmission": "يدوي",
+			"fuel": "ديزل"
+		},
+		"car6": {
+			"price": "٢٥",
+			"seats": "٤/٥",
+			"transmission": "يدوي",
+			"fuel": "ديزل"
+		}
+	}
+}

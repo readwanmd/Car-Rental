@@ -1,0 +1,19 @@
+{
+	"line1": "Plan your trip now",
+	"section_title": "Quick & easy car rental",
+
+	"cards": {
+		"card1": {
+			"title": "Select Car",
+			"desc": "We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs"
+		},
+		"card2": {
+			"title": "Contact Operator",
+			"desc": "Our knowledgeable and friendly operators are always ready to help with any questions or concerns"
+		},
+		"card3": {
+			"title": "Let's Drive",
+			"desc": "Whether you're hitting the open road, we've got you covered with our wide range of cars"
+		}
+	}
+}

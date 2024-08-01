@@ -1,0 +1,58 @@
+{
+	"modal_title": "Compléter la réservation",
+	"modal__message": {
+		"title": "Après avoir complété cette demande de réservation, vous recevrez :",
+		"subtitle": "Votre bon de location à présenter à votre arrivée au guichet de location et un numéro de support client gratuit."
+	},
+
+	"booking_info": {
+		"title": "Lieu et date",
+		"pickup_dt": "Date et heure de prise en charge",
+		"dropoff_dt": "Date et heure de dépose",
+		"pickup_location": "Lieu de prise en charge",
+		"dropoff_location": "Lieu de dépose",
+		"error": {
+			"pickup_dt": "L'heure de prise en charge est requise",
+			"dropoff_dt": "L'heure de dépose est requise"
+		}
+	},
+
+	"personal_info": {
+		"title": "Informations personnelles",
+
+		"input_label": {
+			"f_name": "Prénom",
+			"l_name": "Nom de famille",
+			"phone": "Numéro de téléphone",
+			"email": "Email",
+			"age": "Âge",
+			"address": "Adresse",
+			"city": "Ville",
+			"zip": "Code postal"
+		},
+
+		"placeholder": {
+			"f_name": "Entrez votre prénom",
+			"l_name": "Entrez votre nom de famille",
+			"phone": "Entrez votre numéro de téléphone",
+			"email": "Entrez votre email",
+			"age": "Entrez votre âge",
+			"address": "Entrez votre adresse",
+			"city": "Entrez votre ville",
+			"zip": "Entrez votre code postal"
+		},
+
+		"error": {
+			"f_name": "Le prénom est requis",
+			"l_name": "Le nom de famille est requis",
+			"phone": "Le numéro de téléphone est requis",
+			"email": "L'email est requis",
+			"age": "L'âge est requis",
+			"address": "L'adresse est requise",
+			"city": "La ville est requise",
+			"zip": "Le code postal est requis"
+		}
+	},
+	"confirm_check_box": "Veuillez m'envoyer les dernières nouvelles et mises à jour",
+	"submit_btn": "Réservez maintenant"
+}

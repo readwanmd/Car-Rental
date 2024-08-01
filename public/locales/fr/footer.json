@@ -1,0 +1,25 @@
+{
+	"desc": "Nous offrons une large gamme de véhicules pour tous vos besoins de conduite. Nous avons la voiture parfaite pour répondre à vos besoins.",
+	"working_hours": {
+		"title": "Heures d'ouverture",
+		"li1": "Lun - Ven : 9h00 - 21h00",
+		"li2": "Sam : 9h00 - 19h00",
+		"li3": "Dim : Fermé"
+	},
+
+	"company": {
+		"title": "Entreprise",
+		"li1": "New York",
+		"li2": "Carrière",
+		"li3": "Mobile",
+		"li4": "Blog",
+		"li5": "Comment nous travaillons"
+	},
+
+	"subscription": {
+		"title": "Abonnement",
+		"subtitle": "Abonnez votre adresse e-mail pour les dernières nouvelles et mises à jour.",
+		"placeholder": "Entrez l'adresse e-mail",
+		"submit": "Envoyer"
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"page": "À propos",
+	"line1": "À propos de l'entreprise",
+	"title": "Vous démarrez le moteur et votre aventure commence",
+	"desc": "Certain mais elle mais pourquoi timidité chalet. L'homme a mis l'instrument monsieur les supplications affrontantes. Prétendait voir exquise cordialement vous. Semaines calmes ou vexées de qui. Immobile si pas d'affront imprudence pas de précaution. Mon indulgence étant fortement suivie.",
+
+	"cards": {
+		"card1": {
+			"count": 20,
+			"title": "Type de voiture"
+		},
+		"card2": {
+			"count": 85,
+			"title": "Points de location"
+		},
+		"card3": {
+			"count": 75,
+			"title": "Atelier de réparation"
+		}
+	}
+}

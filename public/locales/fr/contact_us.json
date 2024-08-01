@@ -1,0 +1,24 @@
+{
+	"title": "Besoin d'informations supplémentaires ?",
+	"desc": "Un professionnel polyvalent compétent dans plusieurs domaines de recherche, de développement ainsi qu'un spécialiste de l'apprentissage. Plus de 15 ans d'expérience.",
+
+	"contact_form": {
+		"name": {
+			"label": "Nom complet",
+			"placeholder": "Jane Doe",
+			"error": "Le nom est requis"
+		},
+		"email": {
+			"label": "Email",
+			"placeholder": "exemple@exemple.com",
+			"error": "L'email est requis"
+		},
+		"message": {
+			"label": "Message",
+			"placeholder": "Écrire un message",
+			"error": "Le message est requis"
+		}
+	},
+
+	"send_message": "Envoyer le message"
+}

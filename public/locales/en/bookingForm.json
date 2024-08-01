@@ -1,0 +1,25 @@
+{
+	"field_label": {
+		"car_type": "Select Your Car Type",
+		"pickup_location": "Pick-up Location",
+		"dropoff_location": "Drop-off Location",
+		"pickup_date": "Pick-up Date",
+		"dropoff_date": "Pick-up Date"
+	},
+
+	"field_error": {
+		"car_type": "Car type is required",
+		"pickup_location": "Pick-up location is required",
+		"dropoff_location": "Pick-up location is required",
+		"pickup_date": "Pick-up date is required",
+		"dropoff_date": "Drop-off date is required"
+	},
+
+	"placeholder": {
+		"car_type": "Select Your Car Type",
+		"pickup_location": "Select Pick-up Location",
+		"dropoff_location": "Select Drop-off Location"
+	},
+
+	"submit_btn": "Search"
+}

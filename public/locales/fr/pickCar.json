@@ -1,0 +1,88 @@
+{
+	"line1": "Modèles de véhicules",
+	"section_title": "Notre flotte de location",
+	"subtitle": "Choisissez parmi une variété de nos véhicules incroyables à louer pour votre prochaine aventure ou voyage d'affaires.",
+	"reserve_now": "Réservez maintenant",
+	"rent_per_day": "location par jour",
+
+	"keys": {
+		"name": "nom",
+		"price": "prix",
+		"model": "modèle",
+		"mark": "marque",
+		"year": "année",
+		"doors": "portes",
+		"air": "air",
+		"transmission": "transmission",
+		"fuel": "carburant"
+	},
+
+	"cars": {
+		"car1": {
+			"name": "VW Golf 6",
+			"price": "37",
+			"model": "Golf 6",
+			"mark": "Volkswagen",
+			"year": "2008",
+			"doors": "4/5",
+			"air": "Oui",
+			"transmission": "Manuelle",
+			"fuel": "Diesel"
+		},
+		"car2": {
+			"name": "Audi A1 S-Line",
+			"price": "45",
+			"model": "Audi",
+			"mark": "A1",
+			"year": "2012",
+			"doors": "4/5",
+			"air": "Oui",
+			"transmission": "Manuelle",
+			"fuel": "Essence"
+		},
+		"car3": {
+			"name": "Toyota Camry",
+			"price": "30",
+			"model": "Camry",
+			"mark": "Toyota",
+			"year": "2006",
+			"doors": "4/5",
+			"air": "Oui",
+			"transmission": "Automatique",
+			"fuel": "Hybride"
+		},
+		"car4": {
+			"name": "BMW 320 ModernLine",
+			"price": "35",
+			"model": "320",
+			"mark": "BMW",
+			"year": "2012",
+			"doors": "4/5",
+			"air": "Oui",
+			"transmission": "Manuelle",
+			"fuel": "Diesel"
+		},
+		"car5": {
+			"name": "Mercedes-Benz GLK",
+			"price": "50",
+			"model": "Benz GLK",
+			"mark": "Mercedes",
+			"year": "2006",
+			"doors": "4/5",
+			"air": "Oui",
+			"transmission": "Manuelle",
+			"fuel": "Diesel"
+		},
+		"car6": {
+			"name": "VW Passat CC",
+			"price": "25",
+			"model": "Passat CC",
+			"mark": "Volkswagen",
+			"year": "2008",
+			"doors": "4/5",
+			"air": "Oui",
+			"transmission": "Automatique",
+			"fuel": "Essence"
+		}
+	}
+}

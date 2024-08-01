@@ -1,0 +1,22 @@
+{
+	"line1": "Pourquoi nous choisir",
+	"section_title": "Les meilleures offres que vous trouverez jamais",
+	"subtitle": "Découvrez les meilleures offres que vous trouverez avec nos offres imbattables. Nous nous engageons à vous offrir le meilleur rapport qualité-prix, afin que vous puissiez profiter de services et de produits de haute qualité sans vous ruiner. Nos offres sont conçues pour vous offrir une expérience de location ultime, alors ne manquez pas votre chance de réaliser des économies importantes.",
+
+	"find_details": "Trouver les détails",
+
+	"cards": {
+		"card1": {
+			"title": "Conduite à travers le pays",
+			"description": "Élevez votre expérience de conduite au niveau supérieur avec nos véhicules de premier choix pour vos aventures à travers le pays."
+		},
+		"card2": {
+			"title": "Tarification tout compris",
+			"description": "Obtenez tout ce dont vous avez besoin dans un prix transparent et pratique avec notre politique de tarification tout compris."
+		},
+		"card3": {
+			"title": "Aucun frais caché",
+			"description": "Profitez de la tranquillité d'esprit avec notre politique sans frais cachés. Nous croyons en une tarification transparente et honnête."
+		}
+	}
+}

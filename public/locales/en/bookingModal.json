@@ -1,0 +1,58 @@
+{
+	"modal_title": "Complete Reservation",
+	"modal__message": {
+		"title": "Upon completing this reservation enquiry, you will receive:",
+		"subtitle": "Your rental voucher to produce on arrival at the rental desk and a toll-free customer support number."
+	},
+
+	"booking_info": {
+		"title": "Location & Date",
+		"pickup_dt": "Pick-Up Date & Time",
+		"dropoff_dt": "Drop-Off Date & Time",
+		"pickup_location": "Pick-Up Location",
+		"dropoff_location": "Drop-Off Location",
+		"error": {
+			"pickup_dt": "Pick-Up time is required",
+			"dropoff_dt": "Drop-Off time is required"
+		}
+	},
+
+	"personal_info": {
+		"title": "Personal Information",
+
+		"input_label": {
+			"f_name": "First Name",
+			"l_name": "Last Name",
+			"phone": "Phone Number",
+			"email": "Email",
+			"age": "Age",
+			"address": "Address",
+			"city": "City",
+			"zip": "Zip Code"
+		},
+
+		"placeholder": {
+			"f_name": "Enter your first name",
+			"l_name": "Enter your last name",
+			"phone": "Enter your phone number",
+			"email": "Enter your email",
+			"age": "Enter your age",
+			"address": "Enter your address",
+			"city": "Enter your city",
+			"zip": "Enter your zip code"
+		},
+
+		"error": {
+			"f_name": "First name is required",
+			"l_name": "Last name is required",
+			"phone": "Phone number is required",
+			"email": "Email is required",
+			"age": "Age is required",
+			"address": "Address is required",
+			"city": "City is required",
+			"zip": "Zip Code is required"
+		}
+	},
+	"confirm_check_box": "Please send me latest news and updates",
+	"submit_btn": "Reserve Now"
+}
